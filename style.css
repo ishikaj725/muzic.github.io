@@ -16,11 +16,12 @@ body {
     background-color: black;
     display: grid;
     place-items: center;
+    /* overflow: hidden; */
 }
 
 header {
     width: 85%;
-    height: 94.5%;
+    height: 94.6%;
     /* border: 2px solid white; */
     display: flex;
     flex-wrap: wrap;
@@ -78,10 +79,10 @@ header .menu_side h2 {
     background-color: #CA4246;
     background-image: linear-gradient(45deg,
             #3b3838 16.666%,
-            rgb(208, 24, 128) 16.666%,
-            #d7ed0e 33.333%,
-            #000000 33.333%,
-            #323335 50%,
+            rgb(224, 7, 7) 16.666%,
+            #b10eed 33.333%,
+            #e8fd0a 33.333%,
+            #000000 50%,
             #2694af 50%,
             rgb(51, 33, 214) 66.666%,
             rgb(16, 67, 126) 66.666%,
@@ -166,7 +167,7 @@ header .menu_side .menu_song::-webkit-scrollbar {
 header .menu_side .menu_song li {
     list-style-type: none;
     position: relative;
-    padding: 5px 0px 5px 9px;
+    padding: 7px 0px 5px 9px;
     display: flex;
     align-items: center;
     margin-bottom: 10px;
@@ -321,7 +322,8 @@ header .master_play .icon .bi {
 header .master_play .icon .shuffle {
     font-size: 18px;
     margin-right: 10px;
-    width: 18px;
+    width: 17.5px;
+    overflow: hidden;
     display: flex;
     align-items: center;
 }
@@ -331,6 +333,8 @@ header .master_play .icon .play {
 }
 
 header .master_play .icon #download_music {
+    text-decoration: none;
+    color: #fff;
     font-size: 22px;
     margin-left: 10px;
 }
